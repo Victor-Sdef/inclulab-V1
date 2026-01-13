@@ -1,0 +1,91 @@
+/* accesibilidad.css */
+
+/* Estilo de foco para elementos interactivos */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* Botón de modo accesible */
+.btn-accesible {
+  position: fixed;
+  bottom: 100px; /* Ubicado arriba de la burbuja de ajustes */
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Burbuja de ajustes (botón flotante) */
+.ajustes-burbuja {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0044cc;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Panel de ajustes, inicialmente oculto */
+.panel-ajustes {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #fff;
+  border: 2px solid #0044cc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1001;
+}
+
+.panel-ajustes h5 {
+  margin-top: 0;
+  color: #0044cc;
+}
+
+.panel-ajustes label {
+  font-size: 18px;
+  color: #0044cc;
+}
+
+.panel-ajustes input,
+.panel-ajustes select {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Temas de color */
+.theme-claro {
+  background-color: #ffffff;
+  color: #0044cc;
+}
+
+.theme-oscuro {
+  background-color: #222;
+  color: #ffffff; /* Texto en blanco para modo oscuro */
+}
+
+/* Forzar que los elementos internos hereden el color */
+.theme-oscuro * {
+  color: inherit !important;
+  background-color: transparent !important;
+}
+
+.theme-daltonismo {
+  background-color: #ffffe0; /* Fondo claro */
+  color: #000080; /* Azul oscuro para buen contraste */
+}

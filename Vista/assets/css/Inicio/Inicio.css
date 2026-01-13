@@ -1,0 +1,71 @@
+/* ===== Estilos relacionados con el audio y su barra de progreso ===== */
+
+.audio-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.audio-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.audio-controls button {
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-btn {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+.pause-btn {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+}
+
+.speed-up-btn {
+    background-color: #007bff; /* Azul */
+    color: white;
+}
+
+.speed-down-btn {
+    background-color: #ffc107; /* Amarillo */
+    color: black;
+}
+
+.audio-controls button:hover {
+    opacity: 0.8;
+}
+
+/* Barra de progreso del audio */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Texto de velocidad */
+.speed-display {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}

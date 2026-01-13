@@ -1,0 +1,38 @@
+.header-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0044cc; /* Color de fondo (puedes cambiarlo) */
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 150px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 2em;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .logout-btn {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c0392b;
+  }
+  

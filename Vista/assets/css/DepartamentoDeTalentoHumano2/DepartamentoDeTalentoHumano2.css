@@ -1,0 +1,179 @@
+/* ===== Estilos básicos y generales ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+    font-size: 30px;
+    color: #0044cc;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Estilo amigable para niños */
+  }
+  
+  .top-bar {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  .logout-btn {
+    font-size: 22px;
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c0392b;
+    text-decoration: none;
+  }
+  
+  .form-container {
+    max-width: 800px;
+    width: 75%;
+    margin: 30px auto;
+    border: 2px solid #0044cc;
+    border-radius: 12px;
+    background-color: rgb(223, 223, 225);
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-primary {
+    font-size: 28px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0044cc;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* ===== Estilos para ejercicios, preguntas y opciones ===== */
+  .ejercicio {
+    border: 2px solid #0044cc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #e3f2fd;
+    text-align: left;
+  }
+  
+  .pregunta {
+    background-color: #FFFACD; /* Fondo LemonChiffon para niños */
+    border: 2px solid #FFA07A; /* Borde LightSalmon */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .pregunta label {
+    display: block;
+    font-size: 1.5em;
+    color: #2F4F4F;
+    margin-bottom: 10px;
+  }
+  
+  .pregunta input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.4em;
+    border: 2px solid #FFA07A;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background: #FF6347;
+    margin: 30px auto;
+    width: 80%;
+  }
+  
+  /* ===== Estilos para imágenes ===== */
+  .img-option,
+  .img-option-center {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .img-option {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  .img-option-center {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    border: 3px dashed #FFD700; /* Borde Gold dashed para niños */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  /* ===== Estilos para tablas de resultados ===== */
+  .tabla-resultados {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 1.2em;
+  }
+  
+  .tabla-resultados th, 
+  .tabla-resultados td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .tabla-resultados th {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .tabla-resultados tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-resultados caption {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  /* ===== Estilos para Drag & Drop (Ejercicio 2) ===== */
+  #sortable {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 300px;
+  }
+  
+  #sortable li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    cursor: move;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  #sortable li:hover {
+    background-color: #f0f8ff;
+  }
+  

@@ -1,0 +1,233 @@
+
+  /* ======= Estilos Generales ======= */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-size: 30px;
+    color: #0044cc;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .top-bar {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+  }
+  .logout-btn {
+    font-size: 22px;
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .logout-btn:hover {
+    background-color: #c0392b;
+    text-decoration: none;
+  }
+  .form-container {
+    max-width: 800px;
+    width: 75%;
+    margin: 30px auto;
+    border: 2px solid #0044cc;
+    border-radius: 12px;
+    background-color: rgb(223, 223, 225);
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .btn-primary {
+    font-size: 28px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0044cc;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* ======= Estilos de Ejercicios, Preguntas y Opciones ======= */
+  .ejercicio {
+    border: 2px solid #0044cc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #e3f2fd; /* Fondo azul muy claro */
+  }
+  .pregunta {
+    background-color: #fff; /* Fondo blanco para la pregunta */
+    border: 1px dashed #0044cc;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    text-align: left;
+  }
+  .opcion {
+    background-color: #f1f8e9; /* Fondo verde claro */
+    border: 1px solid #c5e1a5;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    text-align: left;
+  }
+  .opcion label {
+    margin: 0;
+    font-size: 32px;
+    font-weight: normal;
+    color: #0044cc;
+  }
+  
+  /* ======= Drag & Drop (Ejercicio 2) ======= */
+  #sortable {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 300px;
+  }
+  #sortable li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    cursor: move;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  #sortable li:hover {
+    background-color: #f0f8ff;
+  }
+  .img-option {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 4px;
+  }
+  
+  /* ======= Tabla de resultados ======= */
+  table.resultados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+  table.resultados thead {
+    background-color: #0044cc;
+    color: #fff;
+  }
+  table.resultados th, 
+  table.resultados td {
+    border: 2px solid #0044cc;
+    padding: 12px;
+  }
+  table.resultados tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  table.resultados tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  table.resultados th {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  table.resultados td {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  /* ======= Tabla de Competencias ======= */
+  .tabla-competencias {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 26px; /* Un poco más pequeña */
+    text-align: center;
+    table-layout: fixed; /* Para asignar anchos fijos */
+    overflow-wrap: break-word;
+  }
+  .tabla-competencias thead {
+    background-color: #0044cc;
+    color: #fff;
+  }
+  .tabla-competencias th,
+  .tabla-competencias td {
+    border: 2px solid #0044cc;
+    padding: 12px;
+    vertical-align: middle;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  .tabla-competencias th:nth-child(1),
+  .tabla-competencias td:nth-child(1) {
+    width: 40%;
+  }
+  .tabla-competencias th:nth-child(2),
+  .tabla-competencias td:nth-child(2),
+  .tabla-competencias th:nth-child(3),
+  .tabla-competencias td:nth-child(3),
+  .tabla-competencias th:nth-child(4),
+  .tabla-competencias td:nth-child(4),
+  .tabla-competencias th:nth-child(5),
+  .tabla-competencias td:nth-child(5),
+  .tabla-competencias th:nth-child(6),
+  .tabla-competencias td:nth-child(6) {
+    width: 12%;
+  }
+  .tabla-competencias tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  .tabla-competencias tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  .tabla-competencias th {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .tabla-competencias td {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* Encabezado de sección dentro de la tabla */
+  .competencia-header {
+    text-align: left !important;
+    font-weight: bold;
+    background-color: #d1eaff;
+  }
+  
+
+  /* ======= Encabezado: Logo a la izquierda y Cerrar sesión a la derecha ======= */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa; /* Puedes ajustar el color de fondo */
+  }
+  .header-container .logo {
+    display: flex;
+    align-items: center;
+  }
+  .header-container .logo img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .header-container .logout-btn {
+    font-size: 22px;
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .header-container .logout-btn:hover {
+    background-color: #c0392b;
+    text-decoration: none;
+  }
+

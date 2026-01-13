@@ -1,0 +1,54 @@
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .header-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .accessibility-group {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: black;
+  }
+  
+  .accessibility-group h3 {
+    margin-top: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .accessibility-group button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .accessibility-group button:hover {
+    background: #0056b3;
+  }  

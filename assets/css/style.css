@@ -1,0 +1,168 @@
+/* Estilos generales */
+body {
+  background-color: #f8f9fa; /* Fondo gris claro */
+  font-size: 30px; /* Texto grande */
+  color: #0044cc; /* Azul accesible */
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.top-bar {
+  background-color: #0044cc;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+
+.logout-btn {
+  font-size: 22px;
+  color: #fff;
+  background-color: #e74c3c;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.form-container {
+  max-width: 800px;
+  width: 75%;
+  margin: 30px auto;
+  border: 2px solid #0044cc;
+  border-radius: 12px;
+  background-color: rgb(223, 223, 225);
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+  font-size: 34px;
+  padding: 15px;
+  height: 60px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+  line-height: normal;
+  border: 2px solid #0044cc;
+  border-radius: 8px;
+}
+
+.input-group-text {
+  font-size: 30px;
+  background-color: #ddeeff;
+  color: #0044cc;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border: 2px solid #0044cc;
+  border-radius: 8px;
+}
+
+label {
+  margin-top: 15px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #0044cc;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.btn-primary {
+  font-size: 28px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0044cc;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary:focus {
+  outline: 3px solid #0044cc;
+}
+
+/* Estilos para la tabla de resultados */
+table.resultados {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+
+table.resultados thead {
+  background-color: #0044cc;
+  color: #fff;
+}
+
+table.resultados th,
+table.resultados td {
+  border: 2px solid #0044cc;
+  padding: 12px;
+}
+
+table.resultados tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+table.resultados tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+table.resultados th {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+table.resultados td {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Estilos para Drag & Drop del Ejercicio 2 */
+#sortable {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 300px;
+}
+
+#sortable li {
+  margin: 5px 0;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  cursor: move;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+#sortable li:hover {
+  background-color: #f0f8ff;
+}
+
+.img-option {
+  width: 100px;
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+/* Estilos para placeholders y audio, entre otros */
+::placeholder {
+  color: rgba(0, 68, 204, 0.6);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+audio {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+}

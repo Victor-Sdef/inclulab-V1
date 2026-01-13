@@ -1,0 +1,234 @@
+/* inicio.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globales */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #0044cc;
+    background-color: #f8f9fa;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #0044cc;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #003399;
+  }
+  a:hover,
+  a:focus {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  a:active {
+    color: #cc0000;
+  }
+  
+  /* Barra superior */
+  .top-bar {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  /* Botón de cerrar sesión */
+  .logout-btn {
+    font-size: 22px;
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  .logout-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Contenedor principal del formulario */
+  .form-container {
+    max-width: 800px;
+    width: 75%;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid #0044cc;
+    border-radius: 12px;
+    background-color: rgb(223, 223, 225);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Botón primario */
+  .btn-primary {
+    font-size: 28px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0044cc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-primary:hover {
+    background-color: #003399;
+  }
+  
+  /* Ejercicios */
+  .ejercicio {
+    border: 2px solid #0044cc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #e3f2fd;
+    text-align: left;
+  }
+  
+  /* Preguntas y opciones */
+  .pregunta {
+    background-color: #fff;
+    border: 1px dashed #0044cc;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+  }
+  .opcion {
+    background-color: #f1f8e9;
+    border: 1px solid #c5e1a5;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+  }
+  .opcion label {
+    font-size: 32px;
+    font-weight: normal;
+    color: #0044cc;
+  }
+  
+  /* Imágenes centradas */
+  .img-option-center {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Lista de departamentos */
+  .department-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .department-item {
+    border: 1px solid #0044cc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #e3f2fd;
+  }
+  .department-name {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .role-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Enlaces de roles en recuadro */
+  .role-item a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: 2px solid #0044cc;
+    border-radius: 8px;
+    background-color: #f1f8e9;
+    color: #0044cc;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .role-item a:hover {
+    background-color: #dcedc8;
+    color: #003399;
+  }
+  
+  /* Drag & Drop (para ejercicios de ordenar) */
+  #sortable {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 300px;
+  }
+  #sortable li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    cursor: move;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  #sortable li:hover {
+    background-color: #f0f8ff;
+  }
+  
+  /* Puzzle Styles (por ejemplo, para rompecabezas) */
+  .puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+  .puzzle-cell, .puzzle-slot {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fixed-piece {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .puzzle-pieces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .puzzle-piece {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: move;
+  }
+  .puzzle-piece.hidden {
+    opacity: 0;
+  }
+  
+  /* Accesibilidad: Enfoque en elementos interactivos */
+  a:focus, button:focus, input:focus, select:focus {
+    outline: 2px solid #007BFF;
+  }
+  

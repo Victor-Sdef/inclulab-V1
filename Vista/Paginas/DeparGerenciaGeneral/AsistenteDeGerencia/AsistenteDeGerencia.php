@@ -1,0 +1,102 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['user'])) {
+    header('Location: ../ingreso.php?action=login');
+    exit();
+}
+
+$nombreUsuario = isset($_SESSION['user']['nombre']) ? $_SESSION['user']['nombre'] : 'Usuario';
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación de Competencias (Asistente de Gerencia)</title>
+
+  <script src="https://kit.fontawesome.com/32a65358fa.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../../assets/css/DepartamentoGeneral/AsistenteDeGerencia.css">
+  <link rel="stylesheet" href="../../../../assets/css/Inicio/accesibilidad.css">
+</head>
+<body>
+
+
+<!-- Encabezado -->
+<link rel="stylesheet" href="../../../assets/css/logo.css">
+<div class="header-container1">
+    <div class="logo">
+      <img src="../../../../assets/imagenes/logo.png" alt="Logo de IncluLab" 
+           onerror="this.onerror=null; this.src='/04.PDO-MYSQL-V1/assets/imagenes/logo.png';">
+      <h1>IncluLab</h1>
+    </div>
+    <a href="../../salir.php" class="logout-btn" aria-label="Cerrar sesión">
+      <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+    </a>
+  </div>
+
+  <h2>Bienvenido/a, <?php echo htmlspecialchars($nombreUsuario); ?></h2>
+  <br>
+  <h1>Evaluación - Departamento Gerencia General (Asistente De Gerencia)</h1>
+  
+  <div class="form-container">
+    <form id="form-ejercicios" method="POST" onsubmit="enviarFormulario(event)">
+      <!-- Campos ocultos con información de contexto -->
+      <input type="hidden" name="prefijoDepartamento" value="Departamento de Gerencia General">
+      <input type="hidden" name="prefijoCargo" value="Asistente De Gerencia">
+      <input type="hidden" name="prefijoDiscapacidad" value="auditiva, fisica, visual">
+
+      <!-- Incluye aquí los ejercicios que correspondan -->
+      <?php
+        include '../../../../Controlador/DepartamentoGerenciaGeneral/Preguntas/AsistenteDeGerenciaQuestion_Ej1.php';
+        include '../../../../Controlador/DepartamentoGerenciaGeneral/Preguntas/AsistenteDeGerenciaQuestion_Ej2.php';
+        include '../../../../Controlador/DepartamentoGerenciaGeneral/Preguntas/AsistenteDeGerenciaQuestion_Ej3.php';
+        include '../../../../Controlador/DepartamentoGerenciaGeneral/Preguntas/AsistenteDeGerenciaQuestion_Ej4.php';
+        include '../../../../Controlador/DepartamentoGerenciaGeneral/Preguntas/AsistenteDeGerenciaQuestion_Ej5.php';
+        // include '../../../../Controlador/DepartamentoGerenciaGeneral/Preguntas/AsistenteDeGerenciaQuestion_Ej6.php';
+      ?>
+
+      <hr>
+      <button type="submit" class="btn-primary">Enviar Respuestas</button>
+    </form>
+  </div>
+
+  <div id="resultados"></div>
+
+<!-- Tus dos archivos JS separados -->
+<?php include '../../../../Controlador/accesibilidad.php'; ?>
+<script src="../../../assets/js/Inicio/accesibilidad.js"></script>
+<script src="../../../assets/js/DepartamentoDeProduccion2/DepartamentoDeProduccion2.js"></script>
+
+<!-- agregar un bton que diga realizar encuesta y ara que se abra una ventana de emergencia para realizar dicha encuesta -->
+<button id="realizarEncuesta" class="btn btn-primary" onclick="abrirEncuesta()">Realizar Encuesta</button>
+
+<style>
+  /* Posiciona el botón en la parte inferior izquierda de la pantalla */
+  #realizarEncuesta {
+    position: fixed;
+    bottom: 20px; /* Ajusta el espacio desde abajo */
+    left: 20px;   /* Ajusta el espacio desde la izquierda */
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+  }
+</style>
+
+<script>
+  function abrirEncuesta() {
+    // Abre una ventana emergente (popup) con las dimensiones especificadas.
+    // Reemplaza 'ruta_encuesta.php' por la URL o ruta que corresponda al formulario de la encuesta.
+    window.open('AsistenteDeGerenciaEncuesta.php', 'Encuesta', 'width=6000,height=800');
+  }
+</script>
+
+  
+  <link rel="stylesheet" href="../../../../assets/css/Inicio/accesibilidad.css">
+  <?php include '../../../../Controlador/accesibilidad.php'; ?>
+  
+   <!-- Tus dos archivos JS separados -->
+   <script src="../../../../assets/js/Inicio/accesibilidad.js"></script>
+  <script src="../../../assets/js/DepartamentoGeneral/AsistenteDeGerencia.js"></script>
+
+</body>
+</html>
